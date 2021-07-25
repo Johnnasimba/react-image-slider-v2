@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { SliderData } from './sliderData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 
@@ -13,6 +13,18 @@ function ImageSlider({slides}) {
     const prevSlide = () => {
         setCurrent(current === 0? length - 1 : current - 1)
     }
+  
+    useEffect(() => {
+        window.addEventListener('keydown', e => {
+          if(e.key === "ArrowLeft") {
+              prevSlide();
+          }else if(e.key === "ArrowRight") {
+             nextSlide();
+          } else {
+              return
+          }
+        })
+    })
 
 //    Return nothing when slides array contains no data
     if(!Array.isArray(slides) ||slides.length <= 0) {
@@ -22,7 +34,7 @@ function ImageSlider({slides}) {
 
     return (
         <div className='image-slider'>
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+            <FaArrowAltCircleLeft className="left-arrow" onClick = {prevSlide} />
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
             {
                 SliderData.map((slide, index) => {
