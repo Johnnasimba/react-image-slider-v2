@@ -13,7 +13,6 @@ function ImageSlider({slides}) {
     const prevSlide = () => {
         setCurrent(current === 0? length - 1 : current - 1)
     }
-    console.log(current);
 
 //    Return nothing when slides array contains no data
     if(!Array.isArray(slides) ||slides.length <= 0) {
@@ -27,7 +26,17 @@ function ImageSlider({slides}) {
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
             {
                 SliderData.map((slide, index) => {
-                    return <img key={index} src={process.env.PUBLIC_URL + slide.image} className="image" alt="My images" />
+                    return(
+                        <div className={index === current? 'slide active': 'slide'} key={index} >
+                            {
+                                index === current && (
+                                    <img src={process.env.PUBLIC_URL + slide.image} className="image" alt="My images" />
+
+                                )
+                            }
+                        </div>
+                    ) 
+                    
                 })
             }
         </div>
