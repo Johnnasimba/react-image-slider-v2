@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { SliderData } from './sliderData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
+import Dots from './dots/dots.component';
 
 function ImageSlider({slides}) {
     const [current, setCurrent] = useState(0);
@@ -51,6 +52,7 @@ function ImageSlider({slides}) {
                     
                 })
             }
+            <Dots numberOfSlides={length} currentSlide={current} />
         </div>
     )
 }
