@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eact-image-slider-v2/static/css/main.d971dc29.chunk.css",
+    "main.js": "/eact-image-slider-v2/static/js/main.47be3063.chunk.js",
+    "main.js.map": "/eact-image-slider-v2/static/js/main.47be3063.chunk.js.map",
+    "runtime-main.js": "/eact-image-slider-v2/static/js/runtime-main.62166439.js",
+    "runtime-main.js.map": "/eact-image-slider-v2/static/js/runtime-main.62166439.js.map",
+    "static/js/2.9cf964db.chunk.js": "/eact-image-slider-v2/static/js/2.9cf964db.chunk.js",
+    "static/js/2.9cf964db.chunk.js.map": "/eact-image-slider-v2/static/js/2.9cf964db.chunk.js.map",
+    "static/js/3.b486ca9b.chunk.js": "/eact-image-slider-v2/static/js/3.b486ca9b.chunk.js",
+    "static/js/3.b486ca9b.chunk.js.map": "/eact-image-slider-v2/static/js/3.b486ca9b.chunk.js.map",
+    "index.html": "/eact-image-slider-v2/index.html",
+    "static/css/main.d971dc29.chunk.css.map": "/eact-image-slider-v2/static/css/main.d971dc29.chunk.css.map",
+    "static/js/2.9cf964db.chunk.js.LICENSE.txt": "/eact-image-slider-v2/static/js/2.9cf964db.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62166439.js",
+    "static/js/2.9cf964db.chunk.js",
+    "static/css/main.d971dc29.chunk.css",
+    "static/js/main.47be3063.chunk.js"
+  ]
+}
