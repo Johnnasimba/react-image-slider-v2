@@ -14,6 +14,11 @@ function ImageSlider({slides}) {
     const prevSlide = () => {
         setCurrent(current === 0? length - 1 : current - 1)
     }
+    
+    const goToSelectedSlide = (index) => {
+        setCurrent(index)
+    }
+  
   
     useEffect(() => {
         window.addEventListener('keydown', e => {
@@ -52,7 +57,7 @@ function ImageSlider({slides}) {
                     
                 })
             }
-            <Dots numberOfSlides={length} currentSlide={current} />
+            <Dots numberOfSlides={length} currentSlide={current} goToSelectedSlide={goToSelectedSlide} />
         </div>
     )
 }

@@ -3,7 +3,8 @@ import React from 'react';
 import './dots.styles.css';
 
 
-const Dots = ({numberOfSlides, currentSlide}) => {
+const Dots = ({numberOfSlides, currentSlide, goToSelectedSlide}) => {
+    
     return (
         <div className="dots-wrapper">
             {
@@ -12,6 +13,7 @@ const Dots = ({numberOfSlides, currentSlide}) => {
                     className="dot"
                     key={index}
                     style={{background: currentSlide === index? 'black': 'white'}}
+                    onClick={() =>goToSelectedSlide(index)}
                     ></div>
                    
                 ))
