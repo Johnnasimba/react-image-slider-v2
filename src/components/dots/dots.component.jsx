@@ -19,6 +19,6 @@ const Dots = ({numberOfSlides, currentSlide, goToSelectedSlide}) => {
                 ))
             }
         </div>
-    )
+    )  
 }
 export default Dots;
